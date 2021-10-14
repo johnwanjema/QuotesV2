@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Quote, } from './classes/quotes'
+import { Quotes } from './classes/quotes'
 
 @Component({
   selector: 'app-root',
@@ -10,6 +10,6 @@ export class AppComponent {
   title = 'quote';
 
   quotes = [
-    new Quote(1, 'Watch Finding Nemo', `wanje`, 0 ,2 ,'wanjema' ,new Date),
+    new Quotes(1, 'Watch Finding Nemo', `wanje`, 0 ,2 ,'wanjema' ,new Date),
   ]
 }
