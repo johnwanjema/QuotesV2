@@ -1,8 +1,12 @@
 <div class="container">
-    <ul>
-        <li *ngFor='let quote of quotes'>{{quote.name}}</li>
-    </ul>
-</div>
-<div *ngFor='let quote of quotes'>
-    <app-quote-details [quote]='quote'></app-quote-details>
+    <div class="row">
+        <div class="col-md-6">
+            <app-quote-form></app-quote-form>
+        </div>
+        <div class="col-md-6">
+            <div *ngFor='let quote of quotes'>
+                <app-quote-details [quote]='quote'></app-quote-details>
+            </div>
+        </div>
+    </div>
 </div>
